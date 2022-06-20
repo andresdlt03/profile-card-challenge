@@ -10,20 +10,29 @@
     --dark_gray: hsl(0, 0%, 59%);
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 html {
     font-size: 62.5%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--dark_cyan);
+    box-sizing: border-box;
 }
 
 body {
-    width: 35rem;
     font-size: 1.8rem;
     font-family: 'Krub', sans-serif;
     line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .attribution {
@@ -31,10 +40,10 @@ body {
 }
 
 .card {
+    width: 35rem;
     background: white;
-    max-width: 35rem;
+    max-width: 100%;
     text-align: center;
-    margin: auto;
     margin-bottom: 1rem;
     border-radius: 2rem;
     /* Background image */
