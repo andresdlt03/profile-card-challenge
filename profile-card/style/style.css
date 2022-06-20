@@ -33,11 +33,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Background */
+    background: url(/images/bg-pattern-bottom.svg), url(/images/bg-pattern-top.svg), hsl(185, 75%, 39%);
+    background-position: 5rem 40rem, -70rem -50rem, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, fixed;
 }
+
+@media (min-width: 351px) {
+    body {
+        background-position: 130rem 40rem, -25rem -50rem, center center;
+    }
+}
+
+/* Atributtion */
 
 .attribution {
     color: white;
 }
+
+/* Card */
 
 .card {
     width: 35rem;
@@ -65,6 +80,8 @@ body {
     border-radius: 50%;
     border: .5rem solid white;
 }
+
+/* Bio card */
 
 .bio__name {
     font-weight: bold;
