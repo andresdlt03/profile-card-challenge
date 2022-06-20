@@ -7,7 +7,7 @@
     --dark_cyan: hsl(185, 75%, 39%);
     --desaturated_blue: hsl(229, 23%, 23%);
     --dark_grayish_blue: hsl(227, 10%, 46%);
-    --dark_gray: hsl(0, 0%, 59%);
+    --dark_gray: hsla(0, 0%, 59%, 0.494);
 }
 
 *, *:before, *:after {
@@ -27,7 +27,7 @@ html {
 
 body {
     font-size: 1.8rem;
-    font-family: 'Krub', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     line-height: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -55,9 +55,8 @@ body {
 /* Card */
 
 .card {
-    width: 35rem;
+    width: 33rem;
     background: white;
-    max-width: 100%;
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 2rem;
@@ -87,7 +86,11 @@ body {
     font-weight: bold;
 }
 
-.bio__age,
+.bio__age {
+    font-weight: 300;
+    color: var(--dark_grayish_blue);
+}
+
 .bio__city {
     font-weight: 400;
     color: var(--dark_grayish_blue);
@@ -95,14 +98,14 @@ body {
 
 .bio__city {
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
 }
 
 /* Horizontal line */
 
 .hr {
     height: .05rem;
-    background-color: var(--dark_grayish_blue);
+    background-color: var(--dark_gray);
     width: 100%;
 }
 
@@ -115,10 +118,14 @@ body {
 
 .stat__n {
     font-weight: bold;
+    line-height: .1rem;
+    letter-spacing: .1rem;
 }
 
 .stat__text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 0.5rem;
     color: var(--dark_grayish_blue);
+    font-weight: 300;
+    letter-spacing: .2rem;
 }
