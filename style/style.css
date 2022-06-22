@@ -5,7 +5,7 @@
 
     /* Colors */
     --dark_cyan: hsl(185, 75%, 39%);
-    --desaturated_blue: hsl(229, 23%, 23%);
+    --desaturated_blue: hsl(228, 21%, 18%);
     --dark_grayish_blue: hsl(227, 10%, 46%);
     --dark_gray: hsla(0, 0%, 59%, 0.494);
 }
@@ -70,12 +70,16 @@ h1 {
     background-size: 100% 15rem;
 }
 
+.container-profile:first-child {
+    padding: 0 2rem 1rem 2rem;
+}
+
 .container-profile {
     padding: 2rem;
 }
 
 .img {
-    margin-top: 8rem;
+    margin-top: 9rem;
     margin-bottom: 2rem;
 }
 
@@ -88,6 +92,7 @@ h1 {
 
 .bio__name {
     font-weight: bold;
+    color: var(--desaturated_blue);
 }
 
 .bio__age {
@@ -98,11 +103,7 @@ h1 {
 .bio__city {
     font-weight: 400;
     color: var(--dark_grayish_blue);
-}
-
-.bio__city {
     font-size: 1.5rem;
-    margin-bottom: .2rem;
 }
 
 /* Horizontal line */
@@ -124,6 +125,7 @@ h1 {
     font-weight: bold;
     line-height: .1rem;
     letter-spacing: .1rem;
+    color: var(--desaturated_blue);
 }
 
 .stat__text {
