@@ -35,14 +35,14 @@ body {
     align-items: center;
     /* Background */
     background: url(/images/bg-pattern-bottom.svg), url(/images/bg-pattern-top.svg), hsl(185, 75%, 39%);
-    background-position: 5rem 40rem, -70rem -50rem, center center;
+    background-position: 20vh 40vh, -90vh -30vh, center center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, fixed;
 }
 
-@media (min-width: 351px) {
+@media (min-width: 450px) {
     body {
-        background-position: 130rem 40rem, -25rem -50rem, center center;
+        background-position: 70rem 30rem, -30rem -50rem, center center;
     }
 }
 
